@@ -1,0 +1,25 @@
+@use './variables.scss';
+
+header {
+  border-bottom: variables.$common-border;
+
+  nav {
+    display: flex;
+    margin-left: 100px;
+
+    .header-container-left {
+      display: flex;
+      align-items: center;
+    
+      .header-button {
+        padding: 20px;
+        border-right: variables.$common-border;
+        border-left: variables.$common-border;
+      }
+
+      a {
+        margin-right: 10px;
+      }
+    }
+  }
+}

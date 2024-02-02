@@ -1,0 +1,17 @@
+@use './variables.scss';
+
+.content-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  section {
+    margin: 40px 0;
+  }
+  
+  div {
+    border: variables.$common-border;
+    width: 1200px;
+  }
+}
