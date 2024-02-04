@@ -8,10 +8,37 @@
 
   section {
     margin: 40px 0;
-  }
-  
-  div {
-    border: variables.$common-border;
-    width: 1200px;
+    width: 100%;
+    
+    .section-container{
+      display: flex;
+      justify-content: center;
+      
+      .about-me {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1000px;
+        border: variables.$common-border;
+    
+        .about-me-content {
+          padding: 20px;
+          max-width: 600px;
+          box-sizing: border-box;
+    
+          p {
+            line-height: 1.3rem;
+            padding-top: 8px;
+          }
+    
+          margin-right: 100px;
+        }
+    
+        .img-container {
+          height: 300px;
+          box-sizing: border-box;
+        }
+      }
+    }
   }
 }

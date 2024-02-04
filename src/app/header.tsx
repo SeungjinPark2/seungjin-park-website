@@ -7,6 +7,14 @@ export default function Header() {
         <a>logo</a>
         <a className='header-button'>blog</a>
       </div>
+
+      <div>
+        <input className='search-bar' type='search' />
+      </div>
+
+      <div className='header-container-right'>
+        <a className='header-button'>Connect Wallet</a>
+      </div>
     </nav>
   </header>;
 }
