@@ -1,5 +1,10 @@
 @use './variables.scss';
 
+$common-margin-padding: 20px;
+$section-container-max-width: 900px;
+$skill-status-width: 300px;
+$skill-status-color: grey;
+
 .content-container {
   display: flex;
   flex-flow: column;
@@ -7,37 +12,138 @@
   align-items: center;
 
   section {
-    margin: 40px 0;
+    margin: $common-margin-padding 0;
     width: 100%;
-    
-    .section-container{
-      display: flex;
-      justify-content: center;
-      
-      .about-me {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1000px;
-        border: variables.$common-border;
-    
-        .about-me-content {
-          padding: 20px;
-          max-width: 600px;
-          box-sizing: border-box;
-    
-          p {
-            line-height: 1.3rem;
-            padding-top: 8px;
+  }
+}
+
+.section-container{
+  display: flex;
+  justify-content: center;
+}
+
+.section-about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: $section-container-max-width;
+  border: variables.$common-border;
+
+  ul {
+    padding-left: 20px;
+  }
+
+  .section-about-me-content {
+    padding: $common-margin-padding;
+    max-width: 600px;
+    box-sizing: border-box;
+
+    p {
+      line-height: 1.3rem;
+      padding-top: 8px;
+    }
+
+    margin-right: 100px;
+  }
+
+  .img-container {
+    height: 300px;
+    box-sizing: border-box;
+  }
+}
+
+.section-skills {
+  max-width: $section-container-max-width;
+  padding: $common-margin-padding;
+  box-sizing: border-box;
+  border: variables.$common-border;
+
+  .section-skill-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .section-skill-box {
+      margin-top: $common-margin-padding;
+      border: variables.$common-border;
+      width: 400px;
+
+      .skill-title {
+        padding-bottom: 5px;
+      }
+
+      ul {
+        line-height: 1.5rem;
+        list-style: none;
+
+        li {
+          display: flex;
+          justify-content: space-between;
+
+          margin-top: 5px;
+          span {
+            margin-right: 10px;
           }
-    
-          margin-right: 100px;
+
+          .skill-bar {
+            width: $skill-status-width;
+            border: variables.$common-border;
+
+            div {
+              height: 100%;
+            }
+            .skill-status-25 {
+              width: $skill-status-width * 1/4;
+              background-color: $skill-status-color;
+            }
+            .skill-status-50 {
+              width: $skill-status-width * 1/2;
+              background-color: $skill-status-color;
+            }
+            .skill-status-75 {
+              width: $skill-status-width * 2/3;
+              background-color: $skill-status-color;
+            }
+            .skill-status-100 {
+              width: $skill-status-width;
+              background-color: $skill-status-color;
+            }
+          }
         }
+      }
+
+    }
+  }
+}
+
+.section-career {
+  max-width: $section-container-max-width;
+  border: variables.$common-border;
+  padding: $common-margin-padding;
+
+  ul {
+    padding-left: 20px;
+  }
+
+
+  .career-container {
+    display: flex;
+    margin-top: $common-margin-padding;
     
-        .img-container {
-          height: 300px;
-          box-sizing: border-box;
-        }
+    .career-title {
+      width: 250px;
+
+      .job-duration {
+        color:grey;
+      }
+    }
+
+    .career-explained {
+      line-height: 1.5rem;
+      max-width: 600px;
+
+      .semi-career-title {
+        margin: 10px 0;
       }
     }
   }
