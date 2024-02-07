@@ -42,6 +42,6 @@
         "text": "github"
       }
     ],
-    "description": "This is project now you are watching on. I wanted to know what is nextjs, I reallized diffrence between SSR, CSR. And since I didn't use some design framework, It was quite challenging to build design from zero using sass."
+    "description": "This is project now you are watching on. I wanted to know what is nextjs, I reallized diffrence between SSR, CSR. And I didn't use design frameworks, since I felt I need to get used to use pure css before I adaping them."
   }
 ]
