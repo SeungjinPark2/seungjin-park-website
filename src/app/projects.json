@@ -1,0 +1,54 @@
+[
+  {
+    "title": "Rock Paper Scissors Ethers",
+    "image": {
+      "imgName": "rps메인1.png",
+      "imgAlt": "rps project main"
+    },
+    "projectStatus": "done",
+    "skills": [
+      "React",
+      "Solidity",
+      "SmartContract",
+      "Web3.js",
+      "Metamask"
+    ],
+    "link": [
+      {
+        "href": "https://github.com/aad3365/rock-paper-scissors-ethers",
+        "text": "github"
+      },
+      {
+        "href": "https://rock-paper-scissors-ethers.vercel.app/",
+        "text": "link"
+      }
+    ],
+    "description": "This repository is front-end that enables to play rock-paper-scissors betting player's ethers. I learned solidity development and front-end integration with this repository. You can also check live demo on link."
+  },
+  {
+    "title": "port folio page",
+    "image": {
+      "imgName": "rps메인1.png",
+      "imgAlt": "rps project main"
+    },
+    "projectStatus": "done",
+    "skills": [ 
+      "React",
+      "Solidity",
+      "SmartContract",
+      "Web3.js",
+      "Metamask"
+    ],
+    "link": [
+      {
+        "href": "https://github.com/aad3365/rock-paper-scissors-ethers",
+        "text": "github"
+      },
+      {
+        "href": "https://rock-paper-scissors-ethers.vercel.app/",
+        "text": "link"
+      }
+    ],
+    "description": "This repository is front-end that enables to play rock-paper-scissors betting player's ethers. I learned solidity development and front-end integration with this repository. You can also check live demo on link."
+  }
+]

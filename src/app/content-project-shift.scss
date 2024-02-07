@@ -1,0 +1,24 @@
+@use "./variables.scss";
+
+.project-shift-container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+  .button-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    button {
+      background: transparent;
+      cursor: pointer;
+      margin-left: 1px;
+    }
+  
+    .minus {
+      transform: rotateY(180deg);
+    }
+  }
+}
+

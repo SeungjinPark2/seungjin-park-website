@@ -1,8 +1,22 @@
 import Image from 'next/image';
 import './content.scss';
 import profile from '../../public/images/profile.jpg';
+import ProjectContainer from './content-project';
+import path from 'path';
+import fs from 'node:fs';
+import { Project } from './model';
+import ProjectShiftContainer from './content-project-shift';
+
+function projectJsonParser() {
+  const _path = path.resolve('src', 'app', 'projects.json');
+  const data = fs.readFileSync(_path, { encoding: 'utf-8' });
+  const _object = JSON.parse(data);
+  return _object;
+}
 
 export default function Content() {
+  const projectsObject: Project[] = projectJsonParser();
+
   return <div className='content-container'>
     <section>
       <div className="section-container">
@@ -194,13 +208,10 @@ export default function Content() {
 
     <section>
       <div className="section-container">
-        My projects
-      </div>
-    </section>
-
-    <section>
-      <div className="section-container">
-        contact me
+        <div className="section-projects">
+          <h1>Projects</h1>
+          <ProjectShiftContainer projects={projectsObject} />
+        </div>
       </div>
     </section>
   </div>;
