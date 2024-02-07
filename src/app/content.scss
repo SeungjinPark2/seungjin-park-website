@@ -1,34 +1,47 @@
 @use './variables.scss';
 @use './mixins.scss';
+@use './palette.scss';
 
 $common-margin-padding: 20px;
 $section-container-max-width: 900px;
 $skill-status-width: 300px;
 $skill-status-color: grey;
 
+@mixin common-container {
+  @include mixins.box-shadow;
+  max-width: $section-container-max-width;
+  background-color: palette.$color0;
+}
+
 .content-container {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-
+  background-color: transparent;
+  
   section {
-    margin: $common-margin-padding 0;
+    margin-top: $common-margin-padding;
     width: 100%;
+
+    &:last-child {
+      margin-bottom: $common-margin-padding;
+    }
   }
 }
 
-.section-container{
+.section-container {
   display: flex;
   justify-content: center;
+  background-color: transparent;
+
 }
 
 .section-about-me {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: $section-container-max-width;
-  border: variables.$common-border;
+  @include common-container();
 
   ul {
     padding-left: 20px;
@@ -38,6 +51,10 @@ $skill-status-color: grey;
     padding: $common-margin-padding;
     max-width: 600px;
     box-sizing: border-box;
+
+    div {
+      border-top: variables.$common-border;
+    }
 
     p {
       line-height: 1.3rem;
@@ -55,19 +72,18 @@ $skill-status-color: grey;
 }
 
 .section-skills {
-  max-width: $section-container-max-width;
   padding: $common-margin-padding;
   box-sizing: border-box;
-  border: variables.$common-border;
+  @include common-container();
 
   .section-skill-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border-top: variables.$common-border;
 
     .section-skill-box {
       margin-top: $common-margin-padding;
-      border: variables.$common-border;
       width: 400px;
 
       .skill-title {
@@ -119,9 +135,8 @@ $skill-status-color: grey;
 }
 
 .section-career {
-  max-width: $section-container-max-width;
-  border: variables.$common-border;
   padding: $common-margin-padding;
+  @include common-container();
 
   ul {
     padding-left: 20px;
@@ -129,7 +144,11 @@ $skill-status-color: grey;
 
   .career-container {
     display: flex;
-    margin-top: $common-margin-padding;
+    padding-top: $common-margin-padding;
+
+    &:first-of-type {
+      border-top: variables.$common-border;
+    }
     
     .career-title {
       width: 250px;
@@ -141,7 +160,7 @@ $skill-status-color: grey;
 
     .career-explained {
       line-height: 1.5rem;
-      max-width: 600px;
+      max-width: 650px;
 
       .semi-career-title {
         margin: 10px 0;
@@ -151,9 +170,8 @@ $skill-status-color: grey;
 }
 
 .section-projects {
-  max-width: $section-container-max-width;
-  border: variables.$common-border;
   padding: $common-margin-padding;
+  @include common-container();
 
   ul {
     padding-left: 20px;
@@ -166,8 +184,8 @@ $skill-status-color: grey;
 
 
     .project-box {
-      border: variables.$common-border;
       padding: $common-margin-padding;
+      border-top: variables.$common-border;
       
       div {
         margin-bottom: 10px;
@@ -175,11 +193,10 @@ $skill-status-color: grey;
 
       .project-details {
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         flex-wrap: wrap;
 
         .project-img {
-          border: variables.$common-border;
           box-sizing: border-box;
           display: flex;
           align-items: center;

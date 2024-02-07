@@ -26,29 +26,22 @@
     "description": "This repository is front-end that enables to play rock-paper-scissors betting player's ethers. I learned solidity development and front-end integration with this repository. You can also check live demo on link."
   },
   {
-    "title": "port folio page",
+    "title": "PortFolio Page",
     "image": {
-      "imgName": "rps메인1.png",
-      "imgAlt": "rps project main"
+      "imgName": "portfolio-main.png",
+      "imgAlt": "portfolio main capture"
     },
-    "projectStatus": "done",
+    "projectStatus": "inprogress",
     "skills": [ 
-      "React",
-      "Solidity",
-      "SmartContract",
-      "Web3.js",
-      "Metamask"
+      "nextjs",
+      "sass"
     ],
     "link": [
       {
-        "href": "https://github.com/aad3365/rock-paper-scissors-ethers",
+        "href": "https://github.com/aad3365/seungjin-park-website",
         "text": "github"
-      },
-      {
-        "href": "https://rock-paper-scissors-ethers.vercel.app/",
-        "text": "link"
       }
     ],
-    "description": "This repository is front-end that enables to play rock-paper-scissors betting player's ethers. I learned solidity development and front-end integration with this repository. You can also check live demo on link."
+    "description": "This is project now you are watching on. I wanted to know what is nextjs, I reallized diffrence between SSR, CSR. And since I didn't use some design framework, It was quite challenging to build design from zero using sass."
   }
 ]

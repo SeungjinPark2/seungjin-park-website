@@ -1,5 +1,7 @@
+@use './palette.scss';
+
 $border-width: 1px;
 $border-style: solid;
-$border-color: grey;
+$border-color: palette.$color1;
 
-$common-border: $border-width $border-style $border-color; 
+$common-border: $border-width $border-style $border-color;

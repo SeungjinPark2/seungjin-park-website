@@ -7,13 +7,14 @@
 
   .button-box {
     position: absolute;
-    top: 0;
+    top: 5%;
     right: 0;
     
     button {
       background: transparent;
       cursor: pointer;
       margin-left: 1px;
+      border: none;
     }
   
     .minus {

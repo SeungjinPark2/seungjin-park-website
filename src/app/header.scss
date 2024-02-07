@@ -1,34 +1,18 @@
 @use './variables.scss';
+@use './palette.scss';
+@use './mixins.scss';
 
 header {
-  border-bottom: variables.$common-border;
-  margin-bottom: 20px;
+  background-color: palette.$color0;
+  @include mixins.box-shadow;
 
   nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-left: 100px;
     margin-right: 100px;
-
-    .header-container-left {
-      display: flex;
-      align-items: center;
+    padding: 20px;
       
-      a {
-        margin-right: 10px;
-      }
-    }
-
-    .header-button {
-      padding: 20px;
-      border-right: variables.$common-border;
-      border-left: variables.$common-border;
-    }
-
-    .search-bar {
-      padding: 10px;
-      
-    }
   }
 }

@@ -1,5 +1,23 @@
 @use './variables.scss';
+@use './mixins.scss';
+@use './palette.scss';
 
 footer {
-  border-top: variables.$common-border;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  background-color: palette.$color0;
+  @include mixins.box-shadow;
+
+  .contact-me {
+    font-size: 1.3rem;
+    margin-right: 10px;
+  }
+
+  .footer-content {
+    width: 900px;
+    padding: 20px 0;
+    display: flex;
+    align-items: baseline;
+  }
 }

@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import './content.scss';
 import profile from '../../public/images/profile.jpg';
-import ProjectContainer from './content-project';
 import path from 'path';
 import fs from 'node:fs';
 import { Project } from './model';
@@ -23,22 +22,24 @@ export default function Content() {
         <div className="section-about-me">
           <div className="section-about-me-content">
             <h1>About me</h1>
-            <p>
-              {"Hi, I'm a blockchain full-stack developer from South Korea."}
-            </p>
-            <p>
-              {"I was first introduced to blockchain while working at my first job, "}
-              <i>
-                <a href='https://www.dnsevercorp.com/'>Dnsever</a>
-              </i>
-              {", where I was exposed to various blockchains and was inspired by how different projects were trying to realize the value of decentralization.\n"}
-            </p>
-            <p>
-              {"As a full-stack developer, I love to build all the brilliant ideas with my own hands."}
-            </p>
-            <p>
-              {"For me, development is like the LEGOs I used to build as a kid, and I'm the kind of person who finds happiness in realizing these values :)"}
-            </p>
+            <div>
+              <p>
+                {"Hi, I'm a blockchain full-stack developer from South Korea."}
+              </p>
+              <p>
+                {"I was first introduced to blockchain while working at my first job, "}
+                <i>
+                  <a href='https://www.dnsevercorp.com/'>Dnsever</a>
+                </i>
+                {", where I was exposed to various blockchains and was inspired by how different projects were trying to realize the value of decentralization.\n"}
+              </p>
+              <p>
+                {"As a full-stack developer, I love to build all the brilliant ideas with my own hands."}
+              </p>
+              <p>
+                {"For me, development is like the LEGOs I used to build as a kid, and I'm the kind of person who finds happiness in realizing these values :)"}
+              </p>
+            </div>
           </div>
           <div className="img-container">
             <Image 
