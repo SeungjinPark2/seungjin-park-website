@@ -117,7 +117,15 @@ export default function Content() {
                 </li>
                 <li>
                   <span>
-                    nextjs
+                    html + css
+                  </span>
+                  <div className="skill-bar">
+                    <div className="skill-status-50"></div>
+                  </div>
+                </li>
+                <li>
+                  <span>
+                    sass
                   </span>
                   <div className="skill-bar">
                     <div className="skill-status-25"></div>
@@ -125,7 +133,7 @@ export default function Content() {
                 </li>
                 <li>
                   <span>
-                    sass
+                    nextjs
                   </span>
                   <div className="skill-bar">
                     <div className="skill-status-25"></div>
