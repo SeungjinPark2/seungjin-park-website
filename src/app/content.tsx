@@ -42,7 +42,7 @@ export default function Content() {
             </div>
           </div>
           <div className="img-container">
-            <Image 
+            <Image
               src={profile}
               alt={"profile-image"}
               height={300}
@@ -67,13 +67,14 @@ export default function Content() {
               My main jobs were below.
               <h3 className="semi-career-title">Blockchain Node Operator</h3>
               <ul>
-                <li>installing blockchain node (geth, bitcoind, algorand, xrp, etc)</li>
+                <li>installing, updating blockchain node (geth, bitcoind, algorand, xrp, etc)</li>
                 <li>monitoring nodes to sync as latest as possible (grafana, prometheus)</li>
                 <li>building fullstack web application to manage blockchain architecture</li>
               </ul>
               <h3 className="semi-career-title">CEX (centralized exchange) System Developer</h3>
               <ul>
                 <li>integating with blockchain, writing block scanner / transaction preparer / offline signer / account creator / etc</li>
+                <li>managing internal wallet system</li>
               </ul>
             </div>
           </div>
@@ -84,7 +85,7 @@ export default function Content() {
               <div className="job-duration">parttime, remote worker</div>
             </div>
             <div className="career-explained">
-              I had worked as free-lancer, <b>Blockchain Integrator</b>. 
+              I had worked as free-lancer, <b>Blockchain Integrator</b>.
               What I had to do was POC (proof of concept) of whether the client was possible to integrate with some blockchains.
               I researched SUI / APTOS / NEAR and eventually managed to integrate SUI and APTOS.
               These are announcements of listing on CEX.
