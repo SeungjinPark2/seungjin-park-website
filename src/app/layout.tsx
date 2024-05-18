@@ -5,8 +5,8 @@ import "./globals.scss";
 const font = Quicksand({ weight: ['400'], preload: false });
 
 export const metadata: Metadata = {
-  title: "seungjin park portfolio",
-  description: "handmade portfolio page",
+  title: "seungjin park\'s log",
+  description: "logging my journey",
 };
 
 export default function RootLayout({
