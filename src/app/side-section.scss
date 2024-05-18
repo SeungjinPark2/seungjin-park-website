@@ -1,0 +1,42 @@
+@use './scss/variable.scss';
+@use './scss/palette.scss';
+@use './scss/mixins.scss';
+
+.side-container {
+  background-color: palette.$white;
+  width: 300px;
+  margin-right: variable.$common-padding;
+  box-sizing: border-box;
+
+  .bmc-container {
+    @include mixins.box-shadow;
+    padding: variable.$common-padding;
+
+    .bmc-accordion {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .rotate {
+    transform: rotate(90deg);
+  }
+
+  // TODO: make reusable button design
+  button {
+    padding: 10px 0;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    background-color: inherit;
+    border: 2px solid palette.$darkgrey;
+
+    cursor: pointer;
+
+    &:hover {
+      // TODO: do something
+    }
+  }
+}
