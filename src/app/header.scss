@@ -1,18 +1,14 @@
-@use './variables.scss';
-@use './palette.scss';
-@use './mixins.scss';
+@use './scss/variable.scss';
+@use './scss/palette.scss';
+@use './scss/mixins.scss';
 
 header {
-  background-color: palette.$color0;
+  background-color: palette.$white;
   @include mixins.box-shadow;
 
   nav {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding: 20px;
-      
+    padding: variable.$common-padding;
   }
 }

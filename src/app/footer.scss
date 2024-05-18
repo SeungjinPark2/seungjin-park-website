@@ -6,7 +6,7 @@ footer {
   height: 120px;
   display: flex;
   justify-content: center;
-  background-color: palette.$color0;
+  background-color: palette.$white;
   @include mixins.box-shadow;
 
   .contact-me {

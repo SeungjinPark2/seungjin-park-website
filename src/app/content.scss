@@ -10,7 +10,7 @@ $skill-status-color: grey;
 @mixin common-container {
   @include mixins.box-shadow;
   max-width: $section-container-max-width;
-  background-color: palette.$color0;
+  background-color: palette.$white;
 }
 
 .content-container {
@@ -19,13 +19,13 @@ $skill-status-color: grey;
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  
+
   section {
     margin-top: $common-margin-padding;
     width: 100%;
 
-    &:last-child {
-      margin-bottom: $common-margin-padding;
+    &:first-child {
+      margin-top: 0;
     }
   }
 }
