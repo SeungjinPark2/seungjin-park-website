@@ -7,7 +7,7 @@ import { Project } from './model';
 import ProjectShiftContainer from './content-project-shift';
 
 function projectJsonParser() {
-  const _path = path.resolve('src', 'app', 'projects.json');
+  const _path = path.resolve('src', 'static', 'projects.json');
   const data = fs.readFileSync(_path, { encoding: 'utf-8' });
   const _object = JSON.parse(data);
   return _object;
