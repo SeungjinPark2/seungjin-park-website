@@ -1,0 +1,6 @@
+@use './scss/variable.scss';
+
+.container {
+  display: flex;
+  padding: variable.$common-padding;
+}

@@ -2,6 +2,8 @@
 
 $border-width: 1px;
 $border-style: solid;
-$border-color: palette.$color1;
+$border-color: palette.$darkgrey;
 
 $common-border: $border-width $border-style $border-color;
+
+$common-padding: 20px;
