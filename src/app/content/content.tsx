@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import './content.scss';
-import profile from '../../public/images/profile.jpg';
+import profile from '../../../public/images/profile.jpg';
 import path from 'path';
 import fs from 'node:fs';
-import { Project } from './model';
+import { Project } from '../model';
 import ProjectShiftContainer from './content-project-shift';
 
 function projectJsonParser() {
@@ -31,7 +31,7 @@ export default function Content() {
                 <i>
                   <a href='https://www.dnsevercorp.com/'>Dnsever</a>
                 </i>
-                {", where I was exposed to various blockchains and was inspired by how different projects were trying to realize the value of decentralization.\n"}
+                {/* {", where I was exposed to various blockchains and was inspired by how different projects were trying to realize the value of decentralization.\n"} */}
               </p>
               <p>
                 {"As a full-stack developer, I love to build all the brilliant ideas with my own hands."}

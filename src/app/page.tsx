@@ -1,7 +1,7 @@
-import Content from './content';
-import Footer from './footer';
-import Header from './header';
-import SideSection from './side-section';
+import Content from './content/content';
+import Footer from './footer/footer';
+import Header from './header/header';
+import SideSection from './side-section/side-section';
 import './page.scss';
 
 export default function Main() {

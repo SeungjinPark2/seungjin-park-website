@@ -1,7 +1,7 @@
 "use client";
 
 import Image from 'next/image';
-import { Project } from './model';
+import { Project } from '../model';
 
 export default function ProjectContainer({ project }: { project: Project }) {
   return  <div className="projects-container">

@@ -2,7 +2,7 @@
 
 import { useCallback, useState } from 'react';
 import "./content-project-shift.scss";
-import { Project } from './model';
+import { Project } from '../model';
 import ProjectContainer from './content-project';
 import Image from 'next/image';
 
